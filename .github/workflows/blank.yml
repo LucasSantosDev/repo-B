@@ -2,7 +2,7 @@ name: Test Repo B (Receiver)
  
 on:
   repository_dispatch:
-    types: [workflow_dispatch]
+    types: [test]
  
 jobs:
   receiver:
