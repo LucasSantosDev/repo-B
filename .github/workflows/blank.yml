@@ -2,7 +2,7 @@ name: Test Repo B (Receiver)
  
 on:
   repository_dispatch:
-    types: [test]
+    types: ["Triggered by API"]
  
 jobs:
   receiver:
