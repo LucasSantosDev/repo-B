@@ -1,6 +1,8 @@
 name: Test Repo B
 
 on:
+  repository_dispatch:
+    types: [test]
   workflow_dispatch:
 
 jobs:
