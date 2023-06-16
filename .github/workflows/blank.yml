@@ -3,6 +3,8 @@ name: Test Repo B (Receiver)
 on:
   repository_dispatch:
     types: ["Triggered by API"]
+    
+  workflow_dispatch:
  
 jobs:
   receiver:
