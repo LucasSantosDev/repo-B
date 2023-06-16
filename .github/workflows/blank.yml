@@ -1,14 +1,13 @@
-name: Test Repo B
-
+name: Test Repo B (Receiver)
+ 
 on:
   repository_dispatch:
     types: [test]
-  workflow_dispatch:
-
+ 
 jobs:
-  process:
+  receiver:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Run
-        run: echo "Runned!"
+      - name: A event received
+        run: |
+          echo "payload Foo '${{ github.event.client_payload.foo }}'"
